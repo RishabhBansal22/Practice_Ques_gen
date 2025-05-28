@@ -22,9 +22,9 @@ def generate_response(user_prompt):
    return response.text
     
 
-prompt = "generate 5 question on guass elimination menthod with 3 equation and 3 unknowns"
-answer = generate_response(prompt)
-print(answer)
-        
+# prompt = "generate 5 question on geometry"
+# answer = generate_response(prompt)
+# print(answer)
+
 
 
