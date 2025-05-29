@@ -34,10 +34,14 @@ if submit:
     if topic and Num_questions:
         ai_response = generate_response(prompt)
     else:
-        st.markdown("Please Enter Topic and Number of Questions")
+        st.write("Please Enter Topic".upper())
+    
+    try:
+        st.markdown("### Generated Practice Questions")
+        st.write(ai_response)
+    except:
+        st.write("could not produce questions".capitalize())
 
-    st.markdown("### Generated Practice Questions")
-    st.write(ai_response)
 
 
 
