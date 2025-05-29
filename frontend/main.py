@@ -9,7 +9,7 @@ st.title("Generate Practice Questions")
 
 with st.form("input form"):
     Context = st.text_area("Define Your Purpose", placeholder="Computer Science")
-    topic = st.text_area("Enter Topic", placeholder= "Lineat Algebra")
+    topic = st.text_area("Enter Topic", placeholder= "Linear Algebra")
     subtopic = st.text_area("Enter Subtopics", placeholder="Please Enter subtopics (comma-seprated)".capitalize())
     Num_questions = st.number_input("No. Of Questions", min_value=1, max_value=20,)
     difficulty = st.selectbox("Select Difficulty Level", ["Beginner", "Intermediate", "Advanced"])
