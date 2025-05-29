@@ -31,18 +31,19 @@ Guidelines:
 - Do not repeat questions.'''
 
 if submit:
-    if topic and Num_questions:
-        ai_response = generate_response(prompt)
-    else:
-        st.write("Please Enter Topic".upper())
-    
     try:
-        st.markdown("### Generated Practice Questions")
-        st.write(ai_response)
+        if topic and Num_questions:
+            ai_response = generate_response(prompt)
+            st.markdown("### Generated Practice Questions")
+            st.write(ai_response)
+        
+        else:
+            st.warning("Please Provide Topic")
     except:
-        st.write("could not produce questions".capitalize())
+        st.warning("an unknown error occured")
 
 
+    
 
 
 
