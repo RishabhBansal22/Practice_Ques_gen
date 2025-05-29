@@ -9,7 +9,7 @@ try:
     vertexai=False
     )
 except:
-   print("this is a problem with generator client")
+   print("problem with generator client")
 
 def generate_response(user_prompt):
    response = client.models.generate_content(
@@ -22,9 +22,7 @@ def generate_response(user_prompt):
    return response.text
     
 
-# prompt = "generate 5 question on geometry"
-# answer = generate_response(prompt)
-# print(answer)
+
 
 
 
